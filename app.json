@@ -7,11 +7,16 @@
     "icon": "./assets/icon.png",
     "scheme": "stitchdecoder",
     "userInterfaceStyle": "automatic",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.savan.stitchdecoder",
-      "buildNumber": "1"
+      "buildNumber": "2",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -43,9 +48,13 @@
       "typedRoutes": true
     },
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "FILL_IN_AFTER_EAS_INIT"
+        "projectId": "9bcbc5ec-0c6b-48d3-b401-36d85777df63"
       }
-    }
+    },
+    "owner": "savannahshifflet"
   }
 }

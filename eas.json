@@ -50,8 +50,11 @@
   "submit": {
     "production": {
       "ios": {
-        "appleId": "FILL_IN_APPLE_ID",
-        "ascAppId": "FILL_IN_APP_STORE_CONNECT_APP_ID"
+        "appleId": "101896scs@gmail.com",
+        "ascAppId": "6760302607",
+        "ascApiKeyPath": "./AuthKey.p8",
+        "ascApiKeyIssuerId": "dbc06b16-1866-4cf5-ae8c-f456a70d9e9d",
+        "ascApiKeyId": "64PX6C3BK3"
       },
       "android": {
         "serviceAccountKeyPath": "./google-service-account.json",

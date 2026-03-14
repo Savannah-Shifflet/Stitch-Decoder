@@ -22,10 +22,7 @@ done
 
 # ── 1. Dependencies ────────────────────────────────────────────────────────────
 echo "==> Installing dependencies..."
-npm install
-
-echo "==> Checking for Expo version mismatches..."
-npx expo install --fix 2>/dev/null || true
+npm install --legacy-peer-deps
 
 # ── 2. Metro / Watchman cache ──────────────────────────────────────────────────
 echo "==> Clearing bundler caches..."
