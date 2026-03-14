@@ -1,0 +1,19 @@
+Project Credentials Configuration
+
+Project                   @savannahshifflet/stitch-decoder
+Bundle Identifier         com.savan.stitchdecoder
+
+App Store Configuration
+
+Distribution Certificate
+Serial Number             9F5438D6CEDF4445FC5750018F338EE
+Expiration Date           Tue, 09 Mar 2027 10:15:38 CST
+Apple Team                KC8QMJ9GY2 (Savannah Shifflet (Individual))
+Updated                   7 seconds ago
+
+Provisioning Profile
+Developer Portal ID       L9A3K8UM43
+Status                    active
+Expiration                Tue, 09 Mar 2027 10:15:38 CST
+Apple Team                KC8QMJ9GY2 (Savannah Shifflet (Individual))
+Updated                   1 second ago
