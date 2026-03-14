@@ -11,7 +11,7 @@ export default function OnboardingScreen() {
   const [craft, setCraft] = useState<CraftPreference | null>(null);
   const [skill, setSkill] = useState<SkillLevel | null>(null);
   const [loading, setLoading] = useState(false);
-  const { session } = useAuthStore();
+  const { session, fetchProfile } = useAuthStore();
 
   const handleFinish = async () => {
     if (!craft || !skill || !session) return;
@@ -20,6 +20,7 @@ export default function OnboardingScreen() {
       .from("profiles")
       .update({ craft_preference: craft, skill_level: skill })
       .eq("id", session.user.id);
+    await fetchProfile(session.user.id);
     setLoading(false);
     router.replace("/(tabs)");
   };

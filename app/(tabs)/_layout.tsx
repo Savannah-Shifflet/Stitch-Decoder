@@ -3,9 +3,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/stores/auth";
 
 export default function TabsLayout() {
-  const { session } = useAuthStore();
+  const { session, profile } = useAuthStore();
 
   if (!session) return <Redirect href="/(auth)/login" />;
+  if (session && profile && !profile.craft_preference) return <Redirect href="/(auth)/onboarding" />;
 
   return (
     <Tabs

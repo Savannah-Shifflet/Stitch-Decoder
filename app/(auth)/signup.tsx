@@ -16,10 +16,16 @@ export default function SignupScreen() {
       return;
     }
     setLoading(true);
-    const error = await signUp(email, password);
+    const { error, needsConfirmation } = await signUp(email, password);
     setLoading(false);
     if (error) {
       Alert.alert("Sign up failed", error);
+    } else if (needsConfirmation) {
+      Alert.alert(
+        "Check your email",
+        "We sent a confirmation link to " + email + ". Click it to activate your account, then sign in.",
+        [{ text: "OK", onPress: () => router.replace("/(auth)/login") }]
+      );
     } else {
       router.replace("/(auth)/onboarding");
     }
